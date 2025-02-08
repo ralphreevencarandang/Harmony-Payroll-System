@@ -56,7 +56,14 @@ PHP version 8.1 or higher is required, with the following extensions installed:
 Additionally, make sure that the following extensions are enabled in your PHP:
 
 - json (enabled by default - don't turn it off)
+
+
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
 "# decentralized-app" 
-"# Harmony-Payroll-System" 
+"# Harmony-Payroll-System"
+
+  THIS PAYROLL SYSTEM USED ARDUINO UNO AND RFID FOR RECORDING THE EMPLOYEE ATTENDANCE.
+  IF YOU WANT THE CODES AND WIRINGS FOR ADUINO JUST CONTACT ME.
+
+  ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/10f3f61ebc014f50ce6fd1076b7cb1f9a8ae579b/public/images/Dashboard.png)
