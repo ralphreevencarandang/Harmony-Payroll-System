@@ -67,3 +67,8 @@ Additionally, make sure that the following extensions are enabled in your PHP:
   IF YOU WANT THE CODES AND WIRINGS FOR ADUINO JUST CONTACT ME.
 
   ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/10f3f61ebc014f50ce6fd1076b7cb1f9a8ae579b/public/images/Dashboard.png)
+  ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/d423ff24799e6518b601d4de35f1aa1fb1f491a1/public/images/Attendance.png)
+  ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/d423ff24799e6518b601d4de35f1aa1fb1f491a1/public/images/Archive.png)
+  ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/d423ff24799e6518b601d4de35f1aa1fb1f491a1/public/images/Holiday.png)
+  ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/d423ff24799e6518b601d4de35f1aa1fb1f491a1/public/images/Department.png)
+  ![image](https://github.com/ralphreevencarandang/Harmony-Payroll-System/blob/d423ff24799e6518b601d4de35f1aa1fb1f491a1/public/images/Position.png)
