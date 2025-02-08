@@ -1,0 +1,367 @@
+CRITICAL - 2024-10-16 12:55:43 --> ErrorException: Undefined array key "department_description"
+[Method: GET, Route: department]
+in APPPATH\Views\department.php on line 83.
+ 1 APPPATH\Views\department.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "department_description"', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(18): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:04:25 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: addContributionList]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\ContributionTypeController.php(29): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:05:57 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: addContributionList]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\ContributionTypeController.php(29): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:06:49 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: addContributionList]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\ContributionTypeController.php(29): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:07:22 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: addContributionList]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\ContributionTypeController.php(29): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:13:08 --> ErrorException: Undefined variable $ContributionType
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionType', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:13:24 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:14:12 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:14:50 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:14:54 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:15:14 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:16:03 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:16:58 --> ErrorException: Undefined variable $ContributionTypes
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ContributionTypes', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:19:28 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:23:04 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:24:21 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:24:35 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 82.
+ 1 APPPATH\Views\contributionList.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:26:56 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:27:28 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:27:39 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:27:55 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:28:18 --> ErrorException: Array to string conversion
+[Method: POST, Route: addContributionList]
+in APPPATH\Controllers\ContributionTypeController.php on line 36.
+ 1 APPPATH\Controllers\ContributionTypeController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Controllers\\ContributionTypeController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:29:38 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:29:42 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-16 13:30:43 --> ErrorException: Undefined variable $contributions
+[Method: GET, Route: contributionList]
+in APPPATH\Views\contributionList.php on line 83.
+ 1 APPPATH\Views\contributionList.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contributions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\contributionList.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('contributionList', [], true)
+ 5 APPPATH\Controllers\ContributionTypeController.php(17): view('contributionList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')

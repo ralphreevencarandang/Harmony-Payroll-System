@@ -1,0 +1,168 @@
+INFO - 2024-10-28 10:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 10:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 10:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 10:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-28 10:17:02 --> mysqli_sql_exception: Duplicate entry '17-29' for key 'position_id' in C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\app\Controllers\EmployeeController.php(104): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\EmployeeController->addEmployee()
+#10 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+#11 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\...')
+#16 {main}
+CRITICAL - 2024-10-28 10:17:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '17-29' for key 'position_id'
+[Method: POST, Route: employeeForm/addEmployee]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (:employee_id:, :firstname:, :middlename:, :lastname:, :email:, :sex:, :birthdate:, :region_id:, :province_id:, :municipality_id:, :barangay_id:, :phonenumber:, :department_id:, :position_id:, :daily_rate:, :date_hired:, :time_in:, :time_out:, :status:, :pagibig_account_number:, :sss_account_number:, :philhealth_account_number:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\EmployeeController.php(104): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->addEmployee()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\Editing\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-28 10:17:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '17-29' for key 'position_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (\'2024-905616\', \'zxc\', \'zxc\', \'zxc\', \'asd@asd\', \'Male\', \'0213-12-31\', \'15\', \'1507\', \'150711\', \'38414\', \'12333123123\', \'29\', \'17\', \'123\', \'2311-05-04\', \'00:31\', \'15:23\', \'Active\', \'123456789000\', \'9879798798\', \'564654654654\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (\'2024-905616\', \'zxc\', \'zxc\', \'zxc\', \'asd@asd\', \'Male\', \'0213-12-31\', \'15\', \'1507\', \'150711\', \'38414\', \'12333123123\', \'29\', \'17\', \'123\', \'2311-05-04\', \'00:31\', \'15:23\', \'Active\', \'123456789000\', \'9879798798\', \'564654654654\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (:employee_id:, :firstname:, :middlename:, :lastname:, :email:, :sex:, :birthdate:, :region_id:, :province_id:, :municipality_id:, :barangay_id:, :phonenumber:, :department_id:, :position_id:, :daily_rate:, :date_hired:, :time_in:, :time_out:, :status:, :pagibig_account_number:, :sss_account_number:, :philhealth_account_number:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\EmployeeController.php(104): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->addEmployee()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\Editing\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-28 10:17:02 --> [Caused by] mysqli_sql_exception: Duplicate entry '17-29' for key 'position_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (\'2024-905616\', \'zxc\', \'zxc\', \'zxc\', \'asd@asd\', \'Male\', \'0213-12-31\', \'15\', \'1507\', \'150711\', \'38414\', \'12333123123\', \'29\', \'17\', \'123\', \'2311-05-04\', \'00:31\', \'15:23\', \'Active\', \'123456789000\', \'9879798798\', \'564654654654\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (\'2024-905616\', \'zxc\', \'zxc\', \'zxc\', \'asd@asd\', \'Male\', \'0213-12-31\', \'15\', \'1507\', \'150711\', \'38414\', \'12333123123\', \'29\', \'17\', \'123\', \'2311-05-04\', \'00:31\', \'15:23\', \'Active\', \'123456789000\', \'9879798798\', \'564654654654\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (\'2024-905616\', \'zxc\', \'zxc\', \'zxc\', \'asd@asd\', \'Male\', \'0213-12-31\', \'15\', \'1507\', \'150711\', \'38414\', \'12333123123\', \'29\', \'17\', \'123\', \'2311-05-04\', \'00:31\', \'15:23\', \'Active\', \'123456789000\', \'9879798798\', \'564654654654\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_employee` (`employee_id`, `firstname`, `middlename`, `lastname`, `email`, `sex`, `birthdate`, `region_id`, `province_id`, `municipality_id`, `barangay_id`, `phonenumber`, `department_id`, `position_id`, `daily_rate`, `date_hired`, `time_in`, `time_out`, `status`, `pagibig_account_number`, `sss_account_number`, `philhealth_account_number`) VALUES (:employee_id:, :firstname:, :middlename:, :lastname:, :email:, :sex:, :birthdate:, :region_id:, :province_id:, :municipality_id:, :barangay_id:, :phonenumber:, :department_id:, :position_id:, :daily_rate:, :date_hired:, :time_in:, :time_out:, :status:, :pagibig_account_number:, :sss_account_number:, :philhealth_account_number:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\EmployeeController.php(104): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->addEmployee()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-10-28 10:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 10:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 10:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 10:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-28 12:14:15 --> mysqli_sql_exception: Table 'harmony_db.country' doesn't exist in C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\app\Controllers\Dynamic_dependent.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\Dynamic_dependent->index()
+#8 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dynamic_dependent))
+#9 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\ralph\Desktop\Azazel\Capstone Backup\Editing\HarmonySystem\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\...')
+#14 {main}
+CRITICAL - 2024-10-28 12:14:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'harmony_db.country' doesn't exist
+[Method: GET, Route: DynamicDependent]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Dynamic_dependent.php(20): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dynamic_dependent->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dynamic_dependent))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\Editing\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-28 12:14:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'harmony_db.country' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Dynamic_dependent.php(20): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dynamic_dependent->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dynamic_dependent))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\Editing\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-28 12:14:15 --> [Caused by] mysqli_sql_exception: Table 'harmony_db.country' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Dynamic_dependent.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dynamic_dependent->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dynamic_dependent))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-10-28 12:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-28 12:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

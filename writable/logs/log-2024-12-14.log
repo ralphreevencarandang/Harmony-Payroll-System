@@ -1,0 +1,652 @@
+INFO - 2024-12-14 14:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 14:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-14 14:20:34 --> mysqli_sql_exception: Duplicate entry '27' for key 'employee_id' in C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Editing\HarmonySystem\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Editing\HarmonySystem\app\Controllers\AttendanceController.php(144): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+#9 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#10 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Editing\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-14 14:20:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '27' for key 'employee_id'
+[Method: POST, Route: attendance/log]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (:employee_id:, :date:, :time_in:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AttendanceController.php(144): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:20:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '27' for key 'employee_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (\'27\', \'2024-12-14\', \'14:20:34\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (\'27\', \'2024-12-14\', \'14:20:34\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (:employee_id:, :date:, :time_in:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AttendanceController.php(144): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:20:34 --> [Caused by] mysqli_sql_exception: Duplicate entry '27' for key 'employee_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (\'27\', \'2024-12-14\', \'14:20:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (\'27\', \'2024-12-14\', \'14:20:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (\'27\', \'2024-12-14\', \'14:20:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attendance` (`employee_id`, `date`, `time_in`) VALUES (:employee_id:, :date:, :time_in:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AttendanceController.php(144): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:32:23 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: attendance/log]
+in APPPATH\Controllers\AttendanceController.php on line 153.
+ 1 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Controllers\\AttendanceController.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-14 14:33:06 --> mysqli_sql_exception: Unknown column 'tbl_attendance.id' in 'where clause' in C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `tbl_att...', 0)
+#1 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_att...')
+#2 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_att...')
+#3 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_att...', Array, false)
+#4 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Editing\HarmonySystem\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(854): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Editing\HarmonySystem\app\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-401531', Array)
+#8 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+#9 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#10 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Editing\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-14 14:33:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_attendance.id' in 'where clause'
+[Method: POST, Route: attendance/log]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_attendance` SET `time_out` = :time_out:
+WHERE `tbl_attendance`.`id` IN :tbl_attendance.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-401531', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:33:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_attendance.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_attendance` SET `time_out` = \'14:33:06\'
+WHERE `tbl_attendance`.`id` IN (\'2024-401531\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_attendance` SET `time_out` = \'14:33:06\'
+WHERE `tbl_attendance`.`id` IN (\'2024-401531\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_attendance` SET `time_out` = :time_out:
+WHERE `tbl_attendance`.`id` IN :tbl_attendance.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-401531', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:33:06 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_attendance.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `tbl_attendance` SET `time_out` = \'14:33:06\'
+WHERE `tbl_attendance`.`id` IN (\'2024-401531\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_attendance` SET `time_out` = \'14:33:06\'
+WHERE `tbl_attendance`.`id` IN (\'2024-401531\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_attendance` SET `time_out` = \'14:33:06\'
+WHERE `tbl_attendance`.`id` IN (\'2024-401531\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_attendance` SET `time_out` = :time_out:
+WHERE `tbl_attendance`.`id` IN :tbl_attendance.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-401531', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:34:34 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: attendance/log]
+in APPPATH\Controllers\AttendanceController.php on line 153.
+ 1 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Controllers\\AttendanceController.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-14 14:45:15 --> mysqli_sql_exception: Unknown column 'tbl_attendance.id' in 'where clause' in C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `tbl_att...', 0)
+#1 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_att...')
+#2 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_att...')
+#3 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_att...', Array, false)
+#4 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Editing\HarmonySystem\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(854): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Editing\HarmonySystem\app\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-362904', Array)
+#8 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+#9 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#10 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Editing\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-14 14:45:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_attendance.id' in 'where clause'
+[Method: POST, Route: attendance/log]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_attendance` SET `time_out` = :time_out:
+WHERE `tbl_attendance`.`id` IN :tbl_attendance.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-362904', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:45:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_attendance.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_attendance` SET `time_out` = \'14:45:15\'
+WHERE `tbl_attendance`.`id` IN (\'2024-362904\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_attendance` SET `time_out` = \'14:45:15\'
+WHERE `tbl_attendance`.`id` IN (\'2024-362904\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_attendance` SET `time_out` = :time_out:
+WHERE `tbl_attendance`.`id` IN :tbl_attendance.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-362904', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-14 14:45:15 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_attendance.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `tbl_attendance` SET `time_out` = \'14:45:15\'
+WHERE `tbl_attendance`.`id` IN (\'2024-362904\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_attendance` SET `time_out` = \'14:45:15\'
+WHERE `tbl_attendance`.`id` IN (\'2024-362904\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_attendance` SET `time_out` = \'14:45:15\'
+WHERE `tbl_attendance`.`id` IN (\'2024-362904\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_attendance` SET `time_out` = :time_out:
+WHERE `tbl_attendance`.`id` IN :tbl_attendance.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(450): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AttendanceController.php(153): CodeIgniter\Model->update('2024-362904', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->logAttendance()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-14 15:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 15:06:27 --> ErrorException: Undefined array key "Date"
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 54.
+ 1 APPPATH\Views\attendance.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Date"', 'C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php', 54)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(53): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 15:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-14 15:11:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance...' at line 1 in C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `tbl_emp...', 0)
+#1 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_emp...')
+#2 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_emp...')
+#3 C:\xampp\htdocs\Editing\HarmonySystem\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_emp...', Array, false)
+#4 C:\xampp\htdocs\Editing\HarmonySystem\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Editing\HarmonySystem\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Editing\HarmonySystem\app\Controllers\AttendanceController.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+#8 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#9 C:\xampp\htdocs\Editing\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Editing\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Editing\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Editing\HarmonySystem\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-12-14 15:11:36 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance...' at line 1
+[Method: GET, Route: attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AttendanceController.php(47): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-12-14 15:11:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\AttendanceController.php(47): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-12-14 15:11:36 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_employee`.`employee_id`, `tbl_employee`.`firstname`, `tbl_employee`.`middlename`, `tbl_employee`.`lastname`, `tbl_employee`.`time_in` AS `emp_time_in`, `tbl_employee`.`time_out` AS `emp_time_out`, `tbl_attendance`.`date`, `tbl_attendance`.`time_in` AS `att_time_in`, `tbl_attendance`.`time_out` AS `att_time_out`, `tbl_attendance`.`work_hours tbl_department`.`department_name` `tbl_department`.`department_id`
+FROM `tbl_attendance`
+JOIN `tbl_employee` ON `tbl_attendance`.`employee_id` = `tbl_employee`.`employee_id`
+JOIN `tbl_department` ON `tbl_employee`.`department_id` = `tbl_department`.`department_id`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AttendanceController.php(47): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 15:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 15:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:40:02 --> ErrorException: Undefined array key "late_hours"
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 63.
+ 1 APPPATH\Views\attendance.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "late_hours"', 'C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(59): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:40:28 --> ErrorException: Undefined array key "late_hours"
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 63.
+ 1 APPPATH\Views\attendance.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "late_hours"', 'C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(59): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:45:32 --> ErrorException: Undefined array key "late_hours"
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 63.
+ 1 APPPATH\Views\attendance.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "late_hours"', 'C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(59): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:51:01 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 58.
+ 1 APPPATH\Views\attendance.php(58): date('h:m A', '16:56:00')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:51:08 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 58.
+ 1 APPPATH\Views\attendance.php(58): date('h:m a', '16:56:00')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:51:51 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 58.
+ 1 APPPATH\Views\attendance.php(58): date('h:ma', '16:56:00')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:52:19 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 58.
+ 1 APPPATH\Views\attendance.php(58): date('h:i a', '16:56:00')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:52:22 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 58.
+ 1 APPPATH\Views\attendance.php(58): date('h:i a', '16:56:00')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-14 16:52:40 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Views\attendance.php on line 58.
+ 1 APPPATH\Views\attendance.php(58): date('h:i:sa', '16:56:00')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 16:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-14 16:57:10 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+WARNING - 2024-12-14 16:57:10 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+WARNING - 2024-12-14 16:57:10 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-14 16:57:28 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+WARNING - 2024-12-14 16:57:28 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+WARNING - 2024-12-14 16:57:28 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 16:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-14 16:59:49 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+WARNING - 2024-12-14 16:59:49 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+WARNING - 2024-12-14 16:59:49 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\attendance.php on line 61.
+ 1 APPPATH\Views\attendance.php(61): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\app\\Views\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance', [], true)
+ 5 APPPATH\Controllers\AttendanceController.php(61): view('attendance', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AttendanceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Editing\\HarmonySystem\\public\\index.php')
+INFO - 2024-12-14 17:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 17:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 17:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 17:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 17:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-14 17:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,202 @@
+CRITICAL - 2024-10-08 15:59:55 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-10-08 15:59:55 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\slime\Documents\HarmonySystem\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\slime\Documents\HarmonySystem\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\slime\Documents\HarmonySystem\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\slime\Documents\HarmonySystem\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\slime\Documents\HarmonySystem\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\slime\Documents\HarmonySystem\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\slime\Documents\HarmonySystem\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\slime\Documents\HarmonySystem\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\slime\Documents\HarmonySystem\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-10-08 16:01:03 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-10-08 16:01:03 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\slime\Documents\HarmonySystem\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\Users\slime\Documents\HarmonySystem\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\slime\Documents\HarmonySystem\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\Users\slime\Documents\HarmonySystem\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\slime\Documents\HarmonySystem\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\slime\Documents\HarmonySystem\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\slime\Documents\HarmonySystem\system\Boot.php(299): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\slime\Documents\HarmonySystem\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\slime\Documents\HarmonySystem\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-10-08 15:09:08 --> Error: Class "App\Controllers\UsersModel" not found
+[Method: POST, Route: addDepartment]
+in APPPATH\Controllers\DepartmentController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:21:43 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:21:56 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:22:04 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:22:07 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:22:24 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:22:31 --> ErrorException: Undefined variable $user
+[Method: GET, Route: department]
+in APPPATH\Views\department.php on line 77.
+ 1 APPPATH\Views\department.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(18): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:44:28 --> ErrorException: Undefined variable $holidays
+[Method: POST, Route: addHoliday]
+in APPPATH\Views\holiday.php on line 90.
+ 1 APPPATH\Views\holiday.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $holidays', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\holiday.php', 90)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\holiday.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('holiday', [], true)
+ 5 APPPATH\Controllers\HolidayController.php(40): view('holiday')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HolidayController->addHoliday()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HolidayController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:44:48 --> ErrorException: Undefined variable $holidays
+[Method: POST, Route: addHoliday]
+in APPPATH\Views\holiday.php on line 90.
+ 1 APPPATH\Views\holiday.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $holidays', 'C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\holiday.php', 90)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\slime\\Documents\\HarmonySystem\\app\\Views\\holiday.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('holiday', [], true)
+ 5 APPPATH\Controllers\HolidayController.php(40): view('holiday', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HolidayController->addHoliday()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HolidayController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:45:06 --> Error: Class "App\Controllers\DepartmentModel" not found
+[Method: GET, Route: holiday]
+in APPPATH\Controllers\HolidayController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HolidayController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HolidayController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-08 15:45:08 --> Error: Class "App\Controllers\DepartmentModel" not found
+[Method: GET, Route: holiday]
+in APPPATH\Controllers\HolidayController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HolidayController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HolidayController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\slime\\Documents\\HarmonySystem\\public\\index.php')

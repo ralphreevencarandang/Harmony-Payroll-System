@@ -1,0 +1,371 @@
+CRITICAL - 2024-10-14 03:11:10 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:13:35 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:14:16 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:14:22 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:15:04 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:16:10 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:16:11 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:18:24 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: tryfolder/viewBurat]
+in APPPATH\Views\tryfolder\viewBurat.php on line 16.
+ 1 APPPATH\Views\tryfolder\viewBurat.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\tryfolder\\viewBurat.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\tryfolder\\viewBurat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tryfolder/viewBurat', [], true)
+ 5 APPPATH\Controllers\TryfolderController.php(30): view('tryfolder/viewBurat')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TryfolderController->viewBurat()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryfolderController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:21:11 --> ErrorException: Undefined variable $regions
+[Method: GET, Route: addEmployee]
+in APPPATH\Views\addEmployee.php on line 65.
+ 1 APPPATH\Views\addEmployee.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $regions', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\addEmployee.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('addEmployee', [], true)
+ 5 APPPATH\Controllers\UserController.php(38): view('addEmployee')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->addEmployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:21:20 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:21:58 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(30): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 03:23:13 --> ErrorException: Undefined variable $departments
+[Method: POST, Route: addDepartment]
+in APPPATH\Views\department.php on line 75.
+ 1 APPPATH\Views\department.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departments', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(32): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->addDepartment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+ERROR - 2024-10-14 08:01:22 --> mysqli_sql_exception: Table 'harmony_db.country' doesn't exist in C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\app\Controllers\DynamicDependentController.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\DynamicDependentController->index()
+#8 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicDependentController))
+#9 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\...')
+#14 {main}
+CRITICAL - 2024-10-14 08:01:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'harmony_db.country' doesn't exist
+[Method: GET, Route: Dynamic]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DynamicDependentController.php(20): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DynamicDependentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicDependentController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:01:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'harmony_db.country' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DynamicDependentController.php(20): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DynamicDependentController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicDependentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:01:22 --> [Caused by] mysqli_sql_exception: Table 'harmony_db.country' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `country`
+ORDER BY `country_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DynamicDependentController.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DynamicDependentController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicDependentController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+ERROR - 2024-10-14 08:20:31 --> mysqli_sql_exception: Table 'country_state_city.tbl_department' doesn't exist in C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\app\Controllers\DepartmentController.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\CodeIgniter.php(933): App\Controllers\DepartmentController->index()
+#8 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+#9 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\ralph\Desktop\Azazel\Capstone Backup\10-9-24\HarmonySystem\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\...')
+#14 {main}
+CRITICAL - 2024-10-14 08:20:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'country_state_city.tbl_department' doesn't exist
+[Method: GET, Route: department]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_department`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DepartmentController.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:20:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'country_state_city.tbl_department' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_department`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_department`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_department`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DepartmentController.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:20:31 --> [Caused by] mysqli_sql_exception: Table 'country_state_city.tbl_department' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `tbl_department`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_department`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_department`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_department`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DepartmentController.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartmentController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:22:17 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: addContributionList]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\ContributionTypeController.php(29): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:22:24 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: addContributionList]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\ContributionTypeController.php(29): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ContributionTypeController->addContributionList()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContributionTypeController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
+CRITICAL - 2024-10-14 08:24:07 --> ErrorException: Undefined variable $holidays
+[Method: POST, Route: addHoliday]
+in APPPATH\Views\holiday.php on line 90.
+ 1 APPPATH\Views\holiday.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $holidays', 'C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\holiday.php', 90)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\app\\Views\\holiday.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('holiday', [], true)
+ 5 APPPATH\Controllers\HolidayController.php(40): view('holiday', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HolidayController->addHoliday()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HolidayController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\ralph\\Desktop\\Azazel\\Capstone Backup\\10-9-24\\HarmonySystem\\public\\index.php')
